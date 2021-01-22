@@ -1,23 +1,16 @@
+      defaultZone: http://localhost:8761/eureka
+
 server:
   port: 8080
-
 
 spring:
   application:
     name: api-gateway
 
-zuul:
-  prefix: /api
   ignoredServices: '*'
   routes:
     demo-service:
       path: /demo/**
-      url: http://localhost:8081
-
-    x-service:
-      path: /x/**
-      url: https://706c0671d145.ngrok.io/
-
-
+      service-id: demo-service
 
 
