@@ -1,4 +1,4 @@
-package com.example.demoservice;
+package com.example.aservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

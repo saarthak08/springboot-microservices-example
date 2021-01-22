@@ -1,15 +1,17 @@
-package com.example.demoservice;
+package com.example.aservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class DemoServiceApplication {
+@EnableFeignClients
+public class AServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoServiceApplication.class, args);
+		SpringApplication.run(AServiceApplication.class, args);
 	}
 
 }

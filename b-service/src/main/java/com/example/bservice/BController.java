@@ -1,4 +1,4 @@
-package com.example.demoservice;
+package com.example.bservice;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/hello")
-public class DemoController {
+public class BController {
 
-    @GetMapping("/")
-    public String hello() {
-        return "Hi";
+    @GetMapping("/greet")
+    public String greet() {
+        return "Hi from B!";
     }
 }
