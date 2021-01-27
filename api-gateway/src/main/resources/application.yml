@@ -22,5 +22,14 @@ zuul:
     b-service:
       path: /b/**
       service-id: b-service
+    c-service:
+      path: /c/**
+      service-id: c-service
+
+  host:
+    connect-timeout-millis: 100000
+    socket-timeout-millis: 100000
+
+
 
 

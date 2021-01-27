@@ -8,4 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface BService {
     @GetMapping("/hello/greet")
     String greet();
+
+
 }
